@@ -7,4 +7,88 @@
 body {
   height: 100vh;
   background-color: #ccc;
+  font-family: monospace;
+}
+
+#content {
+  height: 100%;
+}
+
+/*** HEADER ***/
+
+#header {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navBar {
+  width: 50rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn {
+  color: #fff;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 1.25rem;
+}
+
+.btn:hover {
+  text-decoration: underline;
+}
+
+/*** FOOTER ***/
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+/*** HOME ***/
+
+#homeContainer {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  background-image: url(/dist/images/cafeImage.jpeg);
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+#homeContainer::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #ffffff30 10%, #00000099 100%);
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+#homeMain {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#homeTitle {
+  padding: 3rem 0 1rem 0;
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  border-bottom: 0.2rem solid #fff;
+}
+
+#homeText {
+  max-width: 40rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  text-align: center;
 }

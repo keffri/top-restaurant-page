@@ -23,7 +23,7 @@ body {
   align-items: center;
 }
 
-#navBar {
+#nav {
   width: 50rem;
   display: flex;
   justify-content: space-evenly;

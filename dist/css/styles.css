@@ -92,3 +92,63 @@ body {
   line-height: 1.5rem;
   text-align: center;
 }
+
+/*** MENU ***/
+
+#menuContainer {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  background-image: url(/dist/images/cafeImage.jpeg);
+  background-position: center;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+#menuContainer::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0deg, #ffffff30 10%, #00000099 100%);
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+#menuMain {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#menuTextContainer {
+  text-align: center;
+}
+
+#menuTitle {
+  padding: 3rem 0 1rem 0;
+  font-size: 4rem;
+  text-decoration: underline;
+}
+
+#menuItemsContainer {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.itemImage {
+  margin: 4rem 3rem;
+  height: 225px;
+  width: 275px;
+  border: 0.2rem solid #fff;
+}
+
+.itemText {
+  margin: -2rem 3rem;
+  color: #fff;
+  font-size: 1.25rem;
+}

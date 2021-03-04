@@ -1,6 +1,12 @@
 import createHeader from "./header";
 import createFooter from "./footer";
 
+function createHomeContainer(type, id) {
+  const homeContainer = document.createElement(type);
+  homeContainer.setAttribute("id", id);
+  return homeContainer;
+}
+
 function createHomeMain(type, id) {
   const homeMain = document.createElement(type);
   homeMain.setAttribute("id", id);
@@ -18,12 +24,6 @@ function createHomeMain(type, id) {
   homeMain.appendChild(homeText);
 
   return homeMain;
-}
-
-function createHomeContainer(type, id) {
-  const homeContainer = document.createElement(type);
-  homeContainer.setAttribute("id", id);
-  return homeContainer;
 }
 
 function home() {

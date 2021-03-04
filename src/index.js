@@ -1,5 +1,5 @@
 import home from "./modules/home";
+import menu from "./modules/menu";
 
-const content = document.getElementById("content");
-
-home();
+// home();
+menu();

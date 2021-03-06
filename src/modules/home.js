@@ -30,7 +30,7 @@ function home() {
   const contentContainer = document.getElementById("content");
   const homeContainer = createHomeContainer("div", "homeContainer");
   const header = createHeader("header", "header");
-  const homeMain = createHomeMain("main", "homeMain");
+  const homeMain = createHomeMain("main", "main");
   const footer = createFooter("footer", "footer");
 
   homeContainer.appendChild(header);

@@ -54,7 +54,7 @@ function menu() {
   const contentContainer = document.getElementById("content");
   const menuContainer = createMenuContainer("div", "menuContainer");
   const header = createHeader("header", "header");
-  const menuMain = createMenuMain("div", "menuMain");
+  const menuMain = createMenuMain("div", "main");
   const menuItemsContainer = createMenuItemsContainer(
     "div",
     "menuItemsContainer"

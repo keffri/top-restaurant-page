@@ -1,5 +1,6 @@
 import home from "./modules/home";
 import menu from "./modules/menu";
+import info from "./modules/info";
 
 const content = document.getElementById("content");
 
